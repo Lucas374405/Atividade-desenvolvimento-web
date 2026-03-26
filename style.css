@@ -3,7 +3,6 @@ body {
     background-size: cover;        
     background-position: center;  
     background-repeat: no-repeat;  
-
     font-family: Arial, sans-serif;
     margin: 0;
     position: relative;
@@ -87,7 +86,7 @@ h2 {
     z-index: 9999;
 
     padding: 12px 20px;
-    background-color: red;
+    background-color: #ff4d4d;
     color: white;
 
     border-radius: 12px;
@@ -97,9 +96,74 @@ h2 {
     box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
 
     transition: 0.3s;
+
+    display: inline-block;
 }
 
 .botao-topo:hover {
     background-color: #cc0000;
     transform: scale(1.05);
+}
+
+.entrada {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.botoes {
+    margin-top: 15px;
+}
+
+.botao-entrar {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.botao-entrar:hover {
+    background-color: #0026ff;
+    transform: scale(1.05);
+}
+
+.tabela-precos {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+
+    position: relative;
+    z-index: 1;
+}
+
+.tabela-precos th {
+    background-color: #ff4d4d;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+}
+
+.tabela-precos td {
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela-precos tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.entrada p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
